@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITNEED- A GYM WEBSITE</title>
+    <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Sora:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Sora:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Sora:wght@400;500;700&display=swap" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -249,10 +251,10 @@
                 <div>
                     <h4 class="fs-700 uppercase fw-bold">Follow us</h4>
                     <ul class="social-icons " role="list">
-                        <li><a href="https://www.facebook.com/snehasish.dey.923"><i class="fa-brands fa-facebook | text-white fs-700"></i></a></li>
-                        <li><a href="https://x.com/deysnehasish51"><i class="fa-brands fa-twitter | text-white fs-700"></i></a></li>
-                        <li><a href="https://www.instagram.com/vengeance__007/"><i class="fa-brands fa-instagram | text-white fs-700"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/snehasish-dey1/"><i class="fa-brands fa-linkedin | text-white fs-700"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook | text-white fs-700"></i></a></li>
+                        <li><a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter | text-white fs-700"></i></a></li>
+                        <li><a href="https://www.instagram.com/kshatriya_kishn/"><i class="fa-brands fa-instagram | text-white fs-700"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kishan17/"><i class="fa-brands fa-linkedin | text-white fs-700"></i></a></li>
                     </ul>
                     <a class="logo">
                         <i class="fa-solid fa-dumbbell"></i>Fitneed</a>
@@ -269,10 +271,10 @@
                 <div>
                     <h4 class="fs-700 uppercase fw-bold">Quick Contacts</h4>
                     <ul role="list" class="contact-links">
-                        <li><a href=""><i class="fa-solid fa-phone"></i>+91-7205132521</a></li>
-                        <li><a href=""><i class="fa-solid fa-envelope"></i></i>deysnehasish51@gmail.com</a></li>
-                        <li><a href=""><i class="fa-solid fa-user"></i>@veangnce_007</a></li>
-                        <li><a href=""><i class="fa-solid fa-location-dot"></i>Mayurbhanj, Odisha, India, 757018</a></li>
+                        <li><a href=""><i class="fa-solid fa-phone"></i>+91-9758891963</a></li>
+                        <li><a href=""><i class="fa-solid fa-envelope"></i></i>kishangangwar117@gmail.com</a></li>
+                        <li><a href=""><i class="fa-solid fa-user"></i>@kishan17</a></li>
+                        <li><a href=""><i class="fa-solid fa-location-dot"></i>Pilibhit, Uttar Pradesh, 262001</a></li>
                     </ul>
                 </div>
             </div>
@@ -287,7 +289,22 @@
 
 
     <script src="js/script.js"></script>
-
+1
+        
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then(registration => {
+                console.log('ServiceWorker registration successful');
+              })
+              .catch(err => {
+                console.log('ServiceWorker registration failed: ', err);
+              });
+          });
+        }
+      </script>
 </body>
 
 </html>
